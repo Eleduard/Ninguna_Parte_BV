@@ -1,4 +1,4 @@
-const header = new Vue ({
+/* const header = new Vue ({
     el: "#header",
     data: {
         menu:`<!-- Inicio menú -->
@@ -15,7 +15,7 @@ const header = new Vue ({
         </footer>
 <!-- Fin menú -->`
     },
-})
+}) */
 
 const app = new Vue ({
     el: "#carouselExampleFade",
