@@ -17,11 +17,33 @@
     },
 }) */
 
-const app = new Vue ({
+/* const app = new Vue ({
     el: "#carouselExampleFade",
     data: {
         imagen1: "http://placekitten.com/1600/650",
         imagen2: "http://placekitten.com/1580/650",
         imagen3: "http://placekitten.com/1560/650",
+    }
+}); */
+
+const form = new Vue ({
+    el: "#form",
+    data: {
+        nombre: "",
+        apellido: "",
+        email: "",
+        comentarios: "",
+        registro: {Nombre: this.nombre, Email: this.email},
+        registros: []
+    },
+    methods: {
+        guardarRegistro() {
+            this.registros.unshift(this.registro)
+        }
+    },
+    computed: {
+        filtroRegistros() {
+            return this.registros
+        }
     }
 });
